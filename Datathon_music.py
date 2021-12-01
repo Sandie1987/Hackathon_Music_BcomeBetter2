@@ -53,7 +53,7 @@ col1, col2, col3 = st.columns([1,6,1])
 with col1:
     st.write("")
 with col2:
-    st.image("etoiles filantes.jpg", width=500)
+    st.image("Pictures/etoiles filantes.jpg", width=500)
 with col3:
     st.write("")
 
@@ -92,7 +92,7 @@ if choose_genre != ' ':
         #user's input
         if choose_genre == 'Pop':
             st.text("\n")
-            st.image("image graph Pop et chanson 1 pop.png", width=780)          
+            st.image("Pictures/image graph Pop et chanson 1 pop.png", width=780)          
             st.text("\n")
             st.text("\n")
 
@@ -156,7 +156,7 @@ if choose_genre != ' ':
                 with col1:
                     st.write("")
                 with col2:
-                    st.image("wow.jpg", width=500)
+                    st.image("Pictures/wow.jpg", width=500)
                 with col3:
                     st.write("")
                 
@@ -168,7 +168,7 @@ if choose_genre != ' ':
         #user's input
         if choose_genre == 'R&B':
             st.text("\n")
-            st.image("image graph R&B et chanson 2.png", width=780)          
+            st.image("Pictures/image graph R&B et chanson 2.png", width=780)          
             st.text("\n")
             st.text("\n")
 
@@ -331,7 +331,7 @@ if choose_genre != ' ':
         #user's input
         if choose_genre == 'Rock':
             st.text("\n")
-            st.image("image graph Rock et chanson 3.png", width=780)          
+            st.image("Pictures/image graph Rock et chanson 3.png", width=780)          
             st.text("\n")
             st.text("\n")
             with st.expander('Lancez votre prédiction'):
@@ -395,7 +395,7 @@ if choose_genre != ' ':
                 with col1:
                     st.write("")
                 with col2:
-                    st.image("image2 sep module (1).jpg", width=500)
+                    st.image("Pictures/image2 sep module (1).jpg", width=500)
                 with col3:
                     st.write("")
                 
