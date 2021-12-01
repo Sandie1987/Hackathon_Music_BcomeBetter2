@@ -21,7 +21,7 @@ st.text("\n")
 def get_gorilla(link):
     image= link
     return image
-gorilla = get_gorilla('gorille_music.jpg')
+gorilla = get_gorilla('pictures/gorille_music.jpg')
 st.image(gorilla, width=700)
 for i in range(12):
     st.text("\n")  
