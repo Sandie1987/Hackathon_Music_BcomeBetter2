@@ -8,7 +8,7 @@ import seaborn as sns
 from sklearn.neighbors import NearestNeighbors
 from sklearn.linear_model import LinearRegression
 
-df_music= pd.read_csv('https://github.com/SandieBerard/Hackathon_Music_BcomeBetter2/blob/main/df_music.csv.zip', sep=',')
+df_music= pd.read_csv('df_music.csv.zip', sep=',')
 
 
 
