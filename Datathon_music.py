@@ -95,7 +95,7 @@ st.markdown("<h3 style='text-align: left; color : black;'>Place à la musique !<
 choose_genre = st.selectbox('Choisissez le genre de votre musique:', [' ','Rock','Pop','R&B'])
 st.text("\n")
 
-st.write("Afin de simuler l'utilisation de notre outil par un musicien, nous avons chargé 3 genres musicaux ainsi que leurs chansons respectives."
+st.write("Afin de simuler l'utilisation de notre outil par un musicien, nous avons chargé 3 genres musicaux ainsi que leurs chansons respectives.")
 st.text("\n")
 # Select a song from the list :
 if choose_genre != ' ':
