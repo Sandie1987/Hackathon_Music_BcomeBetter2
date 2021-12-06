@@ -55,7 +55,7 @@ st.write('Notre algorithme analyse les paramètres de votre chanson et les compa
 st.text("\n")
 st.write('Etape 4 :')
 st.write('Dans un second, avec ces mêmes informations, notre algorithme prédit la popularité de votre titre en se basant sur la popularité des autres chansons de votre genre musical. Derrière cette prédiction nous avons mis en place un algorithme de machine learning en python.')
-st.write('Pour contextualiser votre popularité prédite, nous vous donnons la popularité seuil à atteindre en fonction de votre genre musical. Celle-ci correspond à la popularité obtenue par 75% des chansons de ce genre (3ème quartile de la variable "popularity" dans le dataset).')
+st.write('Pour contextualiser votre popularité prédite, nous vous donnons la popularité seuil à atteindre en fonction de votre genre musical. Celle-ci correspond au seuil en-dessous duquel se trouvent 75% des chansons de ce genre (3ème quartile de la variable "popularity" dans le dataset).')
 st.text("\n")
 st.write('Etape 5 :')
 st.write('Enfin nous vous permettons de modifier certains critères techniques de votre chanson pour atteindre la popularité seuil définie au-dessus. Pour cela, il vous suffit de bouger les curseurs de 4 caractéristiques de votre piste.')
@@ -107,7 +107,9 @@ if choose_genre != ' ':
         
         if choose_song == 'Chanson Pop': 
             song = [choose_genre, np.nan, 0.0421, 0.726,0.654,0.000000, 0.1060, 0.0917, 0.335, 0.8, 0, 0.699864, 0.839256]
-                
+        
+        st.write("Comme expliqué précédemment à l'étape 3, voici graphiquement le positionnement technique de votre chanson par rapport aux autres du même genre.")
+        
         #user's input
         if choose_genre == 'Pop':
             st.text("\n")
@@ -116,6 +118,7 @@ if choose_genre != ' ':
             st.text("\n")
 
             with st.expander('Lancez votre prédiction'):
+                st.write("Dans le tableau ci-dessous, vous trouverez le rappel du genre sélectionné, la note de popularité que nous vous prédisons ainsi que la popularité seuil à atteindre en fonction de votre genre musical. Atteindre ce seuil vous place dans les 25% de chansons les plus populaires du genre.")           
                 st.text("\n")
         #creating df based on user's input
                 df_music_NN_genre = df_music_NN[df_music_NN['genre_lower']==choose_genre.lower()]
