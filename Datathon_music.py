@@ -359,8 +359,7 @@ if choose_genre != ' ':
             st.text("\n")
             st.text("\n")
             with st.expander('Lancez votre prédiction'):
-                st.write("Dans le tableau ci-dessous, vous trouverez le rappel du genre sélectionné, la note de popularité que nous vous prédisons ainsi que la popularité seuil à atteindre en fonction de votre genre musical. Atteindre ce seuil vous place dans les 25% de chansons les plus populaires du genre.")           
-                st.text("\n")
+                
 
                 #TEsting others feature values to go between median and 3rd quartile
                 #creating df based on user's input
@@ -408,6 +407,9 @@ if choose_genre != ' ':
                     return "Don't worry We will help you"
 
                 st.markdown("<h5 style='text-align: left; color : black;'>La popularité de votre chanson </h5>", unsafe_allow_html=True)
+                st.text("\n")
+                st.write("Dans le tableau ci-dessous, vous trouverez le rappel du genre sélectionné, la note de popularité que nous vous prédisons ainsi que la popularité seuil à atteindre en fonction de votre genre musical. Atteindre ce seuil vous place dans les 25% de chansons les plus populaires du genre.")           
+                st.text("\n")
                 pop_and_confidence_3['Confidence'] = pop_and_confidence_3['Distance'].apply(confidence)
                 pop_and_confidence_3['Popularity Threshold'] = df_music_NN[df_music_NN['genre_lower'] == choose_genre.lower()]['popularity'].quantile(0.75).astype(int)
                 pop_and_confidence_3[['Genre','Popularity', 'Popularity Threshold']]
