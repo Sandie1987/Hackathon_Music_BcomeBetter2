@@ -76,17 +76,17 @@ df_music_NN = df_music[['artist_name',	'track_name',	'track_id',	'genre_lower', 
 Flag = True
 # Select your song's genre :
 st.markdown("<h3 style='text-align: left; color : black;'>Place à la musique !</h3>", unsafe_allow_html=True) 
-choose_genre = st.selectbox('Pick one genre :', [' ','Rock','Pop','R&B'])
+choose_genre = st.selectbox('Choisissez un genre :', [' ','Rock','Pop','R&B'])
 st.text("\n")
 
 # Select a song from the list :
 if choose_genre != ' ':
-    choose_song = st.selectbox('Choose your song :', ['Please choose your song','Song Pop','Song R&B','Song Rock'])
+    choose_song = st.selectbox('Choisissez votre chanson :', ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
     song = [np.nan, np.nan, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0 ]
 
-    if choose_song != "Please choose your song":
+    if choose_song != "Choisissez votre chanson":
         
-        if choose_song == 'Song Pop': 
+        if choose_song == 'Chanson Pop': 
             song = [choose_genre, np.nan, 0.0421, 0.726,0.654,0.000000, 0.1060, 0.0917, 0.335, 0.8, 0, 0.699864, 0.839256]
                 
         #user's input
@@ -162,7 +162,7 @@ if choose_genre != ' ':
                 
                 st.text("\n")
 
-    if choose_song == 'Song R&B': 
+    if choose_song == 'Chanson R&B': 
         song = [choose_genre, np.nan, 0.0521,	0.726	,0.654,	0.000000,	0.1060,	0.0917,	0.335	,0.8,	0,	0.699864,	0.839256]
                     
         #user's input
@@ -325,7 +325,7 @@ if choose_genre != ' ':
                 #st.dataframe(reco)
             
 
-    if choose_song == 'Song Rock': 
+    if choose_song == 'Chanson Rock': 
         song = [choose_genre, np.nan, 0.021,	0.726	,0.654,	0.000000,	0.0060,	0.0917,	0.335	,0.8,	0,	0.699864,	0.839256]
                     
         #user's input
