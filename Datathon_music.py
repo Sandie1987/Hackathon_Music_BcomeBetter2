@@ -390,7 +390,7 @@ if choose_genre != ' ':
                 for i in range(4):
                     st.text("\n")
                 st.markdown("<h5 style='text-align: left; color : black;'>Et si nous travaillions ensemble votre chanson</h5>", unsafe_allow_html=True)
-
+         
                 col1, col2, col3 = st.columns([1,6,1])
                 with col1:
                     st.write("")
@@ -400,6 +400,8 @@ if choose_genre != ' ':
                     st.write("")
                 
                 st.text("\n")
+                st.write("Pour faire progresser votre popularité, nous vous proposons de modifier les paramètres de votre chanson.")
+                st.write("Pour cela, allez modifier les différents curseurs à gauche pour voir évoluer votre popularité et vous rapprocher des étoiles.")
 
                 
                 Flag = False
