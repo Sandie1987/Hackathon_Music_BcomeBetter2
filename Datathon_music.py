@@ -108,6 +108,7 @@ if choose_genre != ' ':
         if choose_song == 'Chanson Pop': 
             song = [choose_genre, np.nan, 0.0421, 0.726,0.654,0.000000, 0.1060, 0.0917, 0.335, 0.8, 0, 0.699864, 0.839256]
         
+        st.text("\n")
         st.write("Comme expliqué précédemment à l'étape 3, voici graphiquement le positionnement technique de votre chanson par rapport aux autres du même genre.")
         
         #user's input
@@ -196,7 +197,8 @@ if choose_genre != ' ':
 
             with st.expander('Lancez votre prédiction'):
                 st.text("\n")
-
+                st.write("Dans le tableau ci-dessous, vous trouverez le rappel du genre sélectionné, la note de popularité que nous vous prédisons ainsi que la popularité seuil à atteindre en fonction de votre genre musical. Atteindre ce seuil vous place dans les 25% de chansons les plus populaires du genre.")           
+                st.text("\n")
                 #TEsting others feature values to go below median
                 #creating df based on user's input
                 df_music_NN_genre_2 = df_music_NN[df_music_NN['genre_lower']==choose_genre.lower()]
@@ -357,7 +359,8 @@ if choose_genre != ' ':
             st.text("\n")
             st.text("\n")
             with st.expander('Lancez votre prédiction'):
-
+                st.write("Dans le tableau ci-dessous, vous trouverez le rappel du genre sélectionné, la note de popularité que nous vous prédisons ainsi que la popularité seuil à atteindre en fonction de votre genre musical. Atteindre ce seuil vous place dans les 25% de chansons les plus populaires du genre.")           
+                st.text("\n")
 
                 #TEsting others feature values to go between median and 3rd quartile
                 #creating df based on user's input
