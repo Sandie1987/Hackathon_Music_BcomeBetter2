@@ -91,11 +91,12 @@ df_music_NN = df_music[['artist_name',	'track_name',	'track_id',	'genre_lower', 
 
 Flag = True
 # Select your song's genre :
-st.markdown("<h3 style='text-align: left; color : black;'>Place à la musique !</h3>", unsafe_allow_html=True) 
-choose_genre = st.selectbox('Choisissez le genre de votre musique:', [' ','Rock','Pop','R&B'])
+st.markdown("<h3 style='text-align: left; color : black;'>Place à la musique !</h3>", unsafe_allow_html=True)
 st.text("\n")
-
 st.write("Afin de simuler l'utilisation de notre outil par un musicien, nous avons chargé 3 genres musicaux ainsi que leurs chansons respectives.")
+
+choose_genre = st.selectbox('Choisissez le genre de votre musique:', [' ','Rock','Pop','R&B'])
+
 st.text("\n")
 # Select a song from the list :
 if choose_genre != ' ':
