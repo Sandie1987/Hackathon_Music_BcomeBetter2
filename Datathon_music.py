@@ -76,12 +76,12 @@ df_music_NN = df_music[['artist_name',	'track_name',	'track_id',	'genre_lower', 
 Flag = True
 # Select your song's genre :
 st.markdown("<h3 style='text-align: left; color : black;'>Place à la musique !</h3>", unsafe_allow_html=True) 
-choose_genre = st.selectbox('Choisissez un genre :', [' ','Rock','Pop','R&B'])
+choose_genre = st.selectbox('Choisissez le genre de votre musique:', [' ','Rock','Pop','R&B'])
 st.text("\n")
 
 # Select a song from the list :
 if choose_genre != ' ':
-    choose_song = st.selectbox('Choisissez votre chanson :', ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
+    choose_song = st.selectbox('Choisissez votre chanson pour que nous puissions évaluer votre future popularité :', ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
     song = [np.nan, np.nan, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0 ]
 
     if choose_song != "Choisissez votre chanson":
@@ -487,12 +487,7 @@ if choose_genre != ' ':
                     
                     st.text("\n")
 
-                    st.markdown("<h5 style='text-align: left; color : black;'>Votre indice de confiance</h5>", unsafe_allow_html=True)
-                    st.write(
-                    """
-                    Nous ne faisons pas de magie (et oui!). Toutes nos prédictions Selon la manière de construire votre chanson et surtout du genre dans lequel elle s'inscrit, nos prédictions peuvent varier.
-                    donne du contexte à votre prédiction de popularité.. Cela donne un inveau de fiabilité en fonction du genre dans lequel votre chanson se trouve. Cette indice pour permet de voir à quel point vous pouvez vous fier à notre prédiction.
-                    """)
+                    
                      
 
 
