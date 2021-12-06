@@ -30,9 +30,9 @@ st.write(
  - du temps 
  - de l'argent
  - du matériel
- Avec toujours l'incertitude : "Est-ce que ma chanson aura du succès ?"
+ "
 """)
-
+st.write('Avec toujours l\'incertitude : "Est-ce que ma chanson aura du succès ?')
 st.markdown("<h5 style='text-align: left; color : black;'>Notre solution</h5>", unsafe_allow_html=True)
 st.write(
 """
