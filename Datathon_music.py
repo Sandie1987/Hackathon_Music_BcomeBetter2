@@ -473,14 +473,14 @@ if choose_genre != ' ':
                     pop_and_confidence_10['Popularity Threshold'] = df_music_NN[df_music_NN['genre_lower'] == choose_genre.lower()]['popularity'].quantile(0.75).astype(int)
                     pop_and_confidence_10[['Genre','Popularity','Popularity Threshold']]
 
-                    #BLABLA POUR #3 LIRE LES RESULTATS
-                    for i in range(5):
+                    #texte POUR #3 LIRE LES RESULTATS
+                    for i in range(4):
                         st.text("\n")
 
                     st.markdown("<h5 style='text-align: left; color : black;'>Votre prédiction de popularité :</h5>", unsafe_allow_html=True)
                     st.write(
                     """
-                    Nous analysons pour vous les caractérstiques techniques des chansons de votre catégorie de genre. 
+                    Nous analysons pour vous les caractéristiques techniques des chansons de votre catégorie de genre. 
                     Voici quelques exemples de caractéristiques techniques analysées : 'danceability' (la possibilité de danser sur votre musique), le tempo, le time signature (signature temporelle), l'acoustiness (l'acuité acoustique), etc. 
                     Ces caractéristiques sont présentes lors de la construction de votre chanson. Vous pouvez les retrouver grâce à votre studio d'enregistrement ou grâce à un logiciel dédié.
                     """) 
