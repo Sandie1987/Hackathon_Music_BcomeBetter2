@@ -42,9 +42,13 @@ st.write(
 st.markdown("<h5 style='text-align: left; color : black;'>Comment</h5>", unsafe_allow_html=True)
 st.write(
 """
- Nous prédisons la popularité de votre chanson grâce à l'analyse des caractéristiques techniques de votre chanson  
+ Nous prédisons la popularité de votre chanson grâce à l'analyse des caractéristiques techniques de votre chanson.   
 """)
-
+st.write('Etape 1 :')
+st.write('En tant que musicien, vous sélectionnez le genre de votre composition.')
+st.text("\n")
+st.write('Etape 2 :')
+st.write("Vous entrez les caractéristiques techniques de votre chanson. Ce sont par exemple, la danceability (capacité à pouvoir danser sur la chanson), le tempo, l'acousticness(indique si la piste est acoustique)...")
 st.markdown("<h3 style='text-align: center; color : black;'>Suivez-nous, nous allons vous aider à passer votre chanson de l'anonymat à la célébrité</h3>", unsafe_allow_html=True)
 
 st.text("\n")
@@ -81,7 +85,7 @@ st.text("\n")
 
 # Select a song from the list :
 if choose_genre != ' ':
-    choose_song = st.selectbox("Choisissez la chanson correspondant au genre sélectionné, pour que nous puissions évaluer votre future popularité (avec ce choix nous simulons le dépôt d'une chanson d'un musicien :", ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
+    choose_song = st.selectbox("Choisissez la chanson correspondant au genre sélectionné, pour que nous puissions évaluer votre future popularité (avec ce choix nous simulons le dépôt d'une chanson par un musicien)", ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
     song = [np.nan, np.nan, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0 ]
 
     if choose_song != "Choisissez votre chanson":
