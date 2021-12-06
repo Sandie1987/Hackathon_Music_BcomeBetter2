@@ -402,7 +402,8 @@ if choose_genre != ' ':
                 st.text("\n")
                 st.write("Pour faire progresser votre popularité, nous vous proposons de modifier les paramètres de votre chanson.")
                 st.write("Pour cela, allez modifier les différents curseurs à gauche pour voir évoluer votre popularité et vous rapprocher des étoiles.")
-
+                st.text("\n")
+                st.text("\n")
                 
                 Flag = False
             
