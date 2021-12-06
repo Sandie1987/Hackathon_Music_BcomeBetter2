@@ -58,7 +58,7 @@ st.write('Dans un second, avec ces mêmes informations, notre algorithme prédit
 st.write('Pour contextualiser votre popularité prédite, nous vous donnons la popularité seuil à atteindre en fonction de votre genre musical. Celle-ci correspond à la popularité obtenue par 75% des chansons de ce genre (3ème quartile de la variable "popularity" dans le dataset).')
 st.text("\n")
 st.write('Etape 5 :')
-st.write('Nous vous permettons de modifier certains critères techniques ')
+st.write('Enfin nous vous permettons de modifier certains critères techniques de votre chanson pour atteindre la popularité seuil définie au-dessus. Pour cela, il vous suffit de bouger les curseurs de 4 caractéristiques de votre piste.')
 st.markdown("<h3 style='text-align: center; color : black;'>Suivez-nous, nous allons vous aider à passer votre chanson de l'anonymat à la célébrité</h3>", unsafe_allow_html=True)
 
 st.text("\n")
