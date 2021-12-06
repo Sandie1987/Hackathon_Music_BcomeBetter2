@@ -474,7 +474,7 @@ if choose_genre != ' ':
                     pop_and_confidence_10[['Genre','Popularity','Popularity Threshold']]
 
                     #texte POUR #3 LIRE LES RESULTATS
-                    for i in range(4):
+                    for i in range(3):
                         st.text("\n")
 
                     st.markdown("<h5 style='text-align: left; color : black;'>Votre prédiction de popularité :</h5>", unsafe_allow_html=True)
