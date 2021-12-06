@@ -81,7 +81,7 @@ st.text("\n")
 
 # Select a song from the list :
 if choose_genre != ' ':
-    choose_song = st.selectbox('Choisissez votre chanson pour que nous puissions évaluer votre future popularité :', ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
+    choose_song = st.selectbox("Choisissez la chanson correspondant au genre sélectionné, pour que nous puissions évaluer votre future popularité (avec ce choix nous simulons le dépôt d'une chanson d'un musicien :", ['Choisissez votre chanson','Chanson Pop','Chanson R&B','Chanson Rock'])
     song = [np.nan, np.nan, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0 ]
 
     if choose_song != "Choisissez votre chanson":
