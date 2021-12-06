@@ -49,6 +49,9 @@ st.write('En tant que musicien, vous sélectionnez le genre de votre composition
 st.text("\n")
 st.write('Etape 2 :')
 st.write("Vous entrez les caractéristiques techniques de votre chanson. Ce sont par exemple, la danceability (capacité à pouvoir danser sur la chanson), le tempo, l'acousticness(indique si la piste est acoustique)...")
+st.text("\n")
+st.write('Etape 3 :')
+st.write('Notre algorithme analyse les paramètres de votre chanson et les compare à la moyenne des paramètres de votre genre musicale')
 st.markdown("<h3 style='text-align: center; color : black;'>Suivez-nous, nous allons vous aider à passer votre chanson de l'anonymat à la célébrité</h3>", unsafe_allow_html=True)
 
 st.text("\n")
